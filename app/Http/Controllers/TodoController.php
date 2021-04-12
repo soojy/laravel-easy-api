@@ -52,7 +52,7 @@ class TodoController extends Controller
 
         $todo->update($request->validated());
         return response([
-            "message" => "Post with id: $todo->id updated"
+            "message" => "Todo with id: $todo->id updated"
         ], 200);
     }
 
@@ -61,7 +61,7 @@ class TodoController extends Controller
     {
         $todo->delete();
         return response([
-            "message" => "Post with id: $todo->id deleted"
+            "message" => "Todo with id: $todo->id deleted"
         ], 200);
     }
 }
