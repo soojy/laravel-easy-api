@@ -2,4 +2,4 @@
 PRIVUET
 
 
-1. `composer create-project laravel/laravel example-app`
+1. `composer create-project laravel/laravel laravel-todo`
