@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "855e061d-eb4b-4b3b-9b8b-ed449406d2d2",
+		"name": "Laravel-todo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/todos/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"33333334awdw44444\",\n    \"description\" : \"adbawubkbdkwabkwdjdbwfbekfbejfbekabfaebkfeavk\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/todos/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"todos",
+						""
+					]
+				},
+				"description": "Получение всех"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/todos/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"33333334awdw44444\",\n    \"description\" : \"adbawubkbdkwabkwdjdbwfbekfbejfbekabfaebkfeavk\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/todos/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"todos",
+						""
+					]
+				},
+				"description": "Создание "
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/todos/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"33333334awdw44444\",\n    \"description\" : \"adbawubkbdkwabkwdjdbwfbekfbejfbekabfaebkfeavk\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/todos/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"todos",
+						"1"
+					]
+				},
+				"description": "Получение по id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/todos/",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"33333334awdw44444\",\n    \"description\" : \"adbawubkbdkwabkwdjdbwfbekfbejfbekabfaebkfeavk\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/todos/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"todos",
+						"1"
+					]
+				},
+				"description": "Изменение по id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/todos/",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"33333334awdw44444\",\n    \"description\" : \"adbawubkbdkwabkwdjdbwfbekfbejfbekabfaebkfeavk\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/todos/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"todos",
+						"1"
+					]
+				},
+				"description": "Удаление "
+			},
+			"response": []
+		}
+	]
+}
