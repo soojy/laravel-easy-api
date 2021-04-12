@@ -29,7 +29,7 @@ class TodoController extends Controller
         //     return response([
         //         "message" => "error",
         //         "erros" => $validated->errors()
-        //     ], 400);
+        //     ], 422);
         // }
 
 //        $todo = new Todo();
