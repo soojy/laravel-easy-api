@@ -42,27 +42,27 @@ class TodoController extends Controller
     }
 
     //  показать по id
-    public function show($id)
+    public function show(Todo $todo)
     {
-        return response(Todo::all()->where('id', $id)->first());
+        return $todo;
     }
 
     //  изменение
-    public function update(TodosRequest $request, $id)
+    public function update(Todo $todo, TodosRequest $request)
     {
 
-        $todo = Todo::all()->where('id', $id)->first()->update($request->validated());
+        $todo->update($request->validated());
         return response([
-            "message" => "Post with id: $id updated"
+            "message" => "Post with id: $todo->id updated"
         ], 200);
     }
 
     //  удаление
-    public function destroy($id)
+    public function destroy(Todo $todo)
     {
-        Todo::destroy($id);
+        $todo->delete();
         return response([
-           "message" => "Post with id: $id deleted"
+           "message" => "Post with id: $todo->id deleted"
         ], 200);
     }
 }
