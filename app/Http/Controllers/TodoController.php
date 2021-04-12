@@ -21,7 +21,6 @@ class TodoController extends Controller
     //  создание
     public function store(TodosRequest $request)
     {
-
         // $validated = Validator::make($request->all(), [
         //     "name" => "required|string",
         //     "description" => "required|string",
@@ -32,12 +31,12 @@ class TodoController extends Controller
         //         "erros" => $validated->errors()
         //     ], 400);
         // }
-        $todo = new Todo();
-        $todo->fill($request->validated());
-        $todo->save();
-        return response([
-            "message" => "Post with id: $todo->id created"
-        ], 200);
+
+//        $todo = new Todo();
+//        $todo->fill($request->validated());
+//        $todo->save();
+
+        return response(Todo::create($request->validated()), 200);
 
     }
 
@@ -62,7 +61,7 @@ class TodoController extends Controller
     {
         $todo->delete();
         return response([
-           "message" => "Post with id: $todo->id deleted"
+            "message" => "Post with id: $todo->id deleted"
         ], 200);
     }
 }
